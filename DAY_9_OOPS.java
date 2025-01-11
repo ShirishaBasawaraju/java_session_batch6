@@ -56,4 +56,66 @@ public class DAY_9 {
                 
         }
     }
+# problems
+    public int maxMod5(int a, int b) {
+  if (a == b) {
+        return 0;
+        }
+        if (a % 5 == b % 5) {
+            return Math.min(a, b); 
+        }
+        else{
+        return Math.max(a, b);
+}
+}
+#problem
+    public int sumLimit(int a, int b) {
+  int sum = a + b;
+        if (String.valueOf(sum).length() > String.valueOf(a).length()) {
+            return a;
+        } else {
+            return sum;
+}
+}
+#problem
+    public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
+   if (equalOk) {
+            return a <= b && b <= c; 
+        } else {
+            return a < b && b < c;    
+        }
+}
+#problem
+    public int sumLimit(int a, int b) {
+  int sum = a + b;
+        if (String.valueOf(sum).length() > String.valueOf(a).length()) {
+            return a;
+        } else {
+            return sum;
+}
+}
+#problem
+    public boolean specialEleven(int n) {
+  if(n%11 ==0 || n%11 == 1){
+    return true;
+  }
+  return false;
+}
+#problem
+    public boolean old35(int n) {
+  if(n % 3 == 0 && n % 5 == 0){
+  return false;
+} else if(n % 3 == 0 || n % 5 == 0){
+return true;
+}
+return false;
+}
+#problem
+    public boolean in1To10(int n, boolean outsideMode) {
+if (outsideMode) {
+            return n <= 1 || n >= 10;
+        } else {
+            return n >= 1 && n <= 10;
+        }
+}
 
